@@ -10,3 +10,7 @@
 #   false
 
 p "Enter an odd number:"
+
+number = gets.chomp
+
+p number.to_i.odd?

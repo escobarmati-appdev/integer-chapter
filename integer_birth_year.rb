@@ -21,3 +21,19 @@
 # "Nice! You were born in approximately 2013."
 
 p "How old are you?"
+
+age = gets.chomp.to_i
+
+require "date"
+y = Date.today
+y.year
+
+calculated_bith_date = y.year - age
+
+#if calculated_bith_date > 1990
+#  p "Nice! You were born in approximately " + "#{calculated_bith_date}" + "."
+#else
+#  p "Wow, you were born in " + "#{calculated_bith_date}" + ". You're old!"
+#end
+
+p "Nice! You were born in approximately " + "#{calculated_bith_date}" + "."
